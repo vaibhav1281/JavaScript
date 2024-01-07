@@ -1,45 +1,21 @@
- **JavaScript Named Function**
+# Explanation of Named Function Expression in JavaScript
 
-In JavaScript, a named function is a function that is declared with a name. This allows the function to be called by its name, rather than having to use an anonymous function.
-
-**Example:**
+The provided code is an example of a named function expression in JavaScript. Here's a breakdown of what's happening:
 
 ```javascript
-// Named Function
-var b = function god() {
-    console.log("variable b is called");
-};
-
-b(); // "variable b is called"
+// Named Function 
+var b = function god(){
+    console.log("variable b is called")
+}
+b(); //variable b is called
+god() // index.js:6  Uncaught ReferenceError: god is not defined
+      // at index.js:6:2
 ```
 
-In this example, the function is declared with the name `god`. This means that the function can be called by using the name `god()`.
+In this code, `b` is a variable that is assigned a function named `god`. This function, when called, logs the string ` “variable b is called”` to the console.
 
-**Anonymous Function**
+When the function assigned to `b` is called with `b();`, `“variable b is called”` is logged to the console.
 
-An anonymous function is a function that is declared without a name. This means that the function cannot be called by its name, but must instead be called using an anonymous function expression.
+However, when an attempt is made to call a function named god with `god()`, JavaScript throws a `ReferenceError`. This is because `god` is not accessible in this scope. It was defined as part of a function expression assigned to the variable `b`.
 
-**Example:**
-
-```javascript
-// Anonymous Function
-var b = function() {
-    console.log("variable b is called");
-};
-
-b(); // "variable b is called"
-```
-
-In this example, the function is declared without a name. This means that the function cannot be called by using the name `b()`. Instead, the function must be called using an anonymous function expression, such as `(function() { ... })()`.
-
-**Difference Between Named and Anonymous Functions**
-
-The main difference between named and anonymous functions is that named functions can be called by their name, while anonymous functions cannot. This can be important in some cases, such as when you need to pass a function as an argument to another function.
-
-**When to Use Named Functions**
-
-Named functions should be used when you need to pass a function as an argument to another function. This is because named functions can be called by their name, which makes them easier to use.
-
-**When to Use Anonymous Functions**
-
-Anonymous functions should be used when you do not need to pass a function as an argument to another function. This is because anonymous functions are more concise and easier to read.
+In JavaScript, the name of the function in a named function expression is only accessible within the function itself. Outside of the function, it must be referred to by the variable it was assigned to (in this case, b). Hence, calling `god()` results in a ReferenceError.
