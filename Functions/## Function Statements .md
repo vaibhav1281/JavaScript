@@ -1,8 +1,8 @@
- ## Function Statements vs. Function Expressions
+ **Function Statements vs. Function Expressions**
 
 In JavaScript, functions can be declared in two ways: as function statements or as function expressions.
 
-### Function Statements
+**Function Statements**
 
 Function statements are the traditional way to declare functions in JavaScript. They are defined using the `function` keyword, followed by the function name, parentheses, and the function body. For example:
 
@@ -22,7 +22,7 @@ function a() {
 }
 ```
 
-### Function Expressions
+**Function Expressions**
 
 Function expressions are a more modern way to declare functions in JavaScript. They are defined using the `function` keyword, followed by parentheses, and the function body. For example:
 
