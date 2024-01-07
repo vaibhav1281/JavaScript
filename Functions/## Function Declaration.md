@@ -7,6 +7,16 @@ function functionName() {
 }
 ```
 
+```javascript
+// Named Function 
+ var b = function god(){
+    console.log("variable b is called")
+ }
+ b(); //variable b is called
+ god() // index.js:6  Uncaught ReferenceError: god is not defined
+       // at index.js:6:2
+```
+
 In the example provided, the named function is called `god`. The function is defined with the `function` keyword, followed by the function name, and then the parentheses. The parentheses can be empty, or they can contain parameters. Parameters are placeholders for values that will be passed to the function when it is called.
 
 In the example, the `god` function does not have any parameters. This means that when the function is called, no values will be passed to it.
@@ -20,6 +30,15 @@ god();
 When the `god` function is called, the code inside the function will be executed. In this case, the code inside the function is simply to log the message "variable b is called" to the console.
 
 ## Parameter vs Argument
+
+```javascript
+// Parameter vs Argument 
+var a = function(param1, param2){
+    console.log("a is called")
+}
+a(1,2);
+```
+
 In JavaScript, a parameter is a placeholder for a value that will be passed to a function when it is called. An argument is a value that is actually passed to a function when it is called.
 
 In the example provided, the `a` function has two parameters: `param1` and `param2`. When the `a` function is called, two values will be passed to it. These values will be assigned to the `param1` and `param2` parameters.
