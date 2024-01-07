@@ -51,6 +51,7 @@ When you call `res(2,6)`, it invokes the `sum` function with `2` and `6` as argu
 So, `res(2,6)` will return `8`.
 
 **Note**
+
 Please note that the function name `sum` is not accessible outside the function itself. If you try to call `sum(2,6)`, it will result in a `ReferenceErro`r. To call the function, you should use the variable it was assigned to, which is `res` in this case.
 
 **Summary**
