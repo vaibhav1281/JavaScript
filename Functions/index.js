@@ -1,19 +1,14 @@
-// What is function statement ?
+// Named Function 
+ var b = function god(){
+    console.log("variable b is called")
+ }
+ b(); //variable b is called
+ god() // index.js:6  Uncaught ReferenceError: god is not defined
+       // at index.js:6:2
 
-a(); // a is called
-b(); // index.js:4  Uncaught TypeError: b is not a function
-    //at index.js:4:1
-function a(){
+// Parameter vs Argument 
+
+var a = function(param1, param2){
     console.log("a is called")
 }
-// Function Calling 
-
-
-// What is FUnction Expression ?
-
-var b = function(){
-    console.log("b is called")
-} 
-
-
-// Lest see how Hoisting make difference. If WE call the both function on top the , we'll get TypeError
+a(1,2);
