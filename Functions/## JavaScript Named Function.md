@@ -1,4 +1,4 @@
-# Explanation of Named Function Expression in JavaScript
+## Explanation of Named Function Expression in JavaScript
 
 The provided code is an example of a named function expression in JavaScript. Here's a breakdown of what's happening:
 
