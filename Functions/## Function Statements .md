@@ -42,11 +42,11 @@ var b = function () {
 };
 ```
 
-### Hoisting
+**Hoisting**
 
 Hoisting is the process of moving declarations to the top of their scope. In JavaScript, function statements are hoisted, but function expressions are not. This can lead to errors if you try to call a function expression before it is declared.
 
-### Conclusion
+**Conclusion**
 
 Function statements and function expressions are both valid ways to declare functions in JavaScript. However, there are some key differences between the two. Function statements are hoisted to the top of their scope, while function expressions are not. This means that function statements can be called before they are declared, while function expressions cannot.
 
